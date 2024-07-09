@@ -1,0 +1,10 @@
+<div class="div">
+  <div class="suggestion-topic" *ngFor="let item of sugestions">
+    <h1>{{ item.title }}</h1>
+    <ul>
+      <li>
+        <p *ngFor="let question of item.questions">{{ question }}</p>
+      </li>
+    </ul>
+  </div>
+</div>

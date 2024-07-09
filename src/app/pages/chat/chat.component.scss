@@ -1,0 +1,32 @@
+.chat-wrapper{
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 30px 14px 30px;
+    gap: 20px;
+    border-bottom: 1px solid var(--border-color);
+
+    button{
+      border: none;
+      background-color: transparent;
+    }
+
+    .museum{
+      height: 40px;
+      width: 40px;
+    }
+
+    .status{
+      p{
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+      span {
+        font-weight: 500;
+        color: var(--online-color)
+      };
+
+    }
+  }
+}
