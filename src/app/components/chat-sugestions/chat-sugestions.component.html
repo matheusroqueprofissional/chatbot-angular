@@ -1,9 +1,12 @@
-<div class="div">
-  <div class="suggestion-topic" *ngFor="let item of sugestions">
-    <h1>{{ item.title }}</h1>
-    <ul>
-      <li>
-        <p *ngFor="let question of item.questions">{{ question }}</p>
+<div class="suggestion-wrapper">
+  <div style="width: 100%;" *ngFor="let item of sugestions">
+    <header>
+      <p [innerHTML]="item.icon"></p>
+      <h1>{{ item.title }}</h1>
+    </header>
+    <ul class="suggestion-topic">
+      <li *ngFor="let question of item.questions">
+        <p>{{ question }}</p>
       </li>
     </ul>
   </div>
